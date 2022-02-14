@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@700&display=swap');
+
+body{background-color: #14161a;margin: 0;}
+::-webkit-scrollbar{background: transparent;width: 6px;}
+::-webkit-scrollbar-thumb{background: #4c00ff;}
+*{box-sizing: border-box}
+hr{background: rgba(255, 255, 255, .5);opacity: .3; height: 1px;}
+.menu{position: fixed;left: 0;bottom: 0;top: 0;background-color: #181a1f;border-right: .1px solid rgba(255, 255, 255, .1);z-index: 999;transition: 250ms all;overflow-x: hidden;width: 0;}
+.menu .closebtn{position: absolute;top: 0;right: 25px;font-size: 36px;margin-left: 50px;}
+.menu .box > img{width: 200px;border-radius: 500%;padding: 5px;display: block;margin: 0 auto;}
+.menu .box > h1{font-family: 'Montserrat Alternates', sans-serif;font-weight: bolder;color: white;padding: 5px;text-align: center;}
+.menu .box > p{font-family: 'Montserrat Alternates', sans-serif;font-weight: bolder;color: white;padding: 5px;text-align: center;}
+.menu .box > span{font-family: 'Montserrat Alternates', sans-serif;font-weight: bolder;color: white;text-align: center;display: none;}
+.menu .box > a > samp{color: rgba(255, 255, 255, .3);margin-left: 10px;user-select: none;}
+.menu .box > hr{border: none;height: 1px;background: #5c5c5c;opacity: .5;}
+.menu .box > a{color: white;font-family: 'Montserrat Alternates', sans-serif;display: block;padding: 5px;margin-top: 5px;transition: 250ms all;padding: 10px;text-decoration:none;}
+.menu .box > a:hover{background-color: #14161a;box-shadow: 2px 0px 0px .1px rgba(255, 255, 255, .5);}
+.menu .bottom{position: absolute;bottom: 0;margin: 10px;left: 0;right: 0;}
+.menu .bottom a{color: white;font-family: 'Montserrat Alternates', sans-serif;display: inline-block;margin-top: 5px;transition: 250ms all;margin-left: 5px;margin-right: 5px;text-decoration: none;transition: 250ms all;}
+.menu .bottom a:hover{color: rgba(255, 255, 255, .5);}
+.menu .between{display: flex;justify-content: space-between;}
+.menu .mobile-menu > a{color: white;text-decoration: none;margin-right: -20px;}
+.content{padding: 5px;margin-left: 10px;margin-top: 10px;}
+.content > h1{font-family: 'Mitr', sans-serif;font-weight: bolder;color: white;line-height: 1;}
+.content > p{font-family: 'Montserrat Alternates', sans-serif;font-weight: bolder;color: white;}
+.content strong{transition: 250ms all;border-bottom: 2px double rgba(255, 255, 255, .3);}
+.content strong:hover{border-bottom: 2px double red;}
+.content .data-flex-box{display: flex;margin-top: 30px;flex-wrap: wrap;justify-content: space-around;}
+.content .data-flex-box > div{margin-left: 10px;background-color: #181a1f;padding: 7px;text-align: center;border-radius: 8px;box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .5);transition: cubic-bezier(0.86, 0, 0.07, 1) .3s all;}
+.content .data-flex-box > div:hover{transform: translateY(-5px);/* background-color: #4c00ff; */box-shadow: initial}
+.content .data-flex-box > div > h1{font-family: 'Mitr', sans-serif;font-weight: bolder;color: white;line-height: 1;}
+.content .data-flex-box > div > li{color: white;display: block;}
+.content .data-flex-box > div > li > p{font-family: 'Montserrat Alternates', sans-serif;font-weight: bolder;color: white;}
+.content .data-flex-box > div > #banka::after{content: '200₺';font-size: 12px;font-weight: bolder;color: red;border-radius: 40px;vertical-align: top;}
+.content .data-flex-box > div > #smm::after{content: '50₺';font-size: 12px;font-weight: bolder;color: red;border-radius: 40px;vertical-align: top;}
+.content .data-flex-box > div > #dork::after{content: '90₺';font-size: 12px;font-weight: bolder;color: red;border-radius: 40px;vertical-align: top;}
+.content .data-flex-box > div > a{font-family: 'Montserrat Alternates', sans-serif;font-weight: bolder;color: white;padding: 6px;display: inline-block;text-decoration: none;box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .2);border-radius: 5px;transition: .5s all;}
+.content .data-flex-box > div > a:hover{background-color: #4c00ff;box-shadow: initial;}
+.sorular{margin-top: 20px;font-family: 'Montserrat Alternates', sans-serif;font-weight: bolder;color: white;}
+.sorular .boxs{margin-left: 10px;margin-right: 10px;display:flex;justify-content: space-around;flex-direction: column;}
+.sorular .boxs > div{padding: 5px;box-shadow: 0px 0px 0px 2px rgba(255, 255, 290, .1);border-radius: 10px;transition: 250ms all;margin-bottom: 10px}
+.sorular .boxs > div:hover{background-color: rgba(255, 255, 290, .1);box-shadow: initial;}
+.sorular .boxs > div > h1{font-family: 'Mitr', sans-serif;font-weight: bolder;color: white;line-height: 1;}
+.sorular .boxs > div > p{font-weight: bolder;color: white;line-height: 1;}
+.ac{position: absolute;top: 0;right: 0;margin: 5px;color: white;font-size: x-large;text-decoration: none;}
+.copyright{position: sticky;bottom: 0;left: 0;right: 0;font-family: 'Montserrat Alternates', sans-serif;font-weight: bolder;color: white;}
+.copyright span{text-align: center;display: block;background-color: rgba(0, 0, 0, .9);}
+/* Slider */
+.mobile-center{display: initial}
+.mySlides2{display: none;}
+img{width: 70%;vertical-align: middle;}
+.prev, .next{cursor: pointer;position: absolute;top: 50%;width: auto;padding: 16px;margin-top: -22px;color: white;font-weight: bold;font-size: 18px;transition: 0.6s ease;border-radius: 0 3px 3px 0px;user-select: none;}
+.next{right: 0;border-radius: 3px 0 0 3px;}
+/* Responsive */
+@media screen and (max-width: 800px){.copyright{display: none}.content{margin: initial;text-align: center;}.content .data-flex-box{flex-direction: column;flex-wrap: nowrap;}.content .data-flex-box > div{margin-bottom: 20px;margin-left: initial;margin-right: initial;}.menu .box > span{display: block;}.mobile-center{display: flex;}}
+
+/* CODİNG BY PÂYİDAR */
